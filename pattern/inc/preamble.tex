@@ -157,6 +157,17 @@
     \end{figure}
 }
 
+\usepackage{svg}
+\usepackage{svg-extract}
+\newcommand{\addsvg}[4]{
+    \begin{figure}
+        \centering
+        \includesvg[width=#2]{#1}
+        \caption{#3}
+        \label{#4}
+    \end{figure}
+}
+
 \usepackage{wasysym} % Пришлось добавить для символов из статьи
 \usepackage{placeins} % Для FloatBarrier
 
