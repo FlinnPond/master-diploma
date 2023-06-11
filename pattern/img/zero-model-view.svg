@@ -30,37 +30,43 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.1893044"
-     inkscape:cx="350.20471"
-     inkscape:cy="377.95202"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="513.10089"
+     inkscape:cy="295.49379"
      inkscape:window-width="1848"
      inkscape:window-height="1009"
      inkscape:window-x="72"
      inkscape:window-y="34"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g11995" />
   <defs
      id="defs2">
     <pattern
        inkscape:collect="always"
-       xlink:href="#Strips2_1"
-       id="pattern21097"
-       patternTransform="matrix(-1.8878086,1.8878086,13.111121,13.111121,0,0)" />
+       xlink:href="#Strips4_1"
+       id="pattern3433"
+       patternTransform="matrix(3.2401211,-3.2401211,5.8218444,5.821844,0,0)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips4_1"
+       id="pattern3131"
+       patternTransform="matrix(4.1986457,-4.1986457,5.2483073,5.2483072,0,0)" />
     <pattern
        inkscape:collect="always"
        patternUnits="userSpaceOnUse"
-       width="1.5"
+       width="1.25"
        height="1"
        patternTransform="translate(0,0) scale(10,10)"
-       id="Strips2_1"
-       inkscape:stockid="Stripes 2:1">
+       id="Strips4_1"
+       inkscape:stockid="Stripes 4:1"
+       inkscape:isstock="true">
       <rect
          style="fill:black;stroke:none"
          x="0"
          y="-0.5"
          width="1"
          height="2"
-         id="rect5129" />
+         id="rect1978" />
     </pattern>
     <pattern
        patternUnits="userSpaceOnUse"
@@ -139,34 +145,13 @@
          height="2"
          id="rect5078-4" />
     </pattern>
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#Strips2_1-2"
-       id="pattern21097-2"
-       patternTransform="matrix(-1.8878087,1.8878086,13.111121,13.11112,-4.0691048,-20.056345)" />
-    <pattern
-       inkscape:collect="always"
-       patternUnits="userSpaceOnUse"
-       width="1.5"
-       height="1"
-       patternTransform="translate(0,0) scale(10,10)"
-       id="Strips2_1-2"
-       inkscape:stockid="Stripes 2:1">
-      <rect
-         style="fill:black;stroke:none"
-         x="0"
-         y="-0.5"
-         width="1"
-         height="2"
-         id="rect5129-8" />
-    </pattern>
   </defs>
   <g
      inkscape:label="main"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:0.5;fill:url(#pattern21097);fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="opacity:0.5;fill:url(#pattern3131);fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="rect20852"
        width="173.69571"
        height="62.29903"
@@ -347,7 +332,7 @@
          inkscape:label="solid"
          transform="translate(4.069102,20.056344)">
         <rect
-           style="opacity:0.5;fill:url(#pattern21097-2);fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+           style="opacity:0.5;fill:url(#pattern3433);fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
            id="rect20852-9"
            width="11.703584"
            height="11.703588"
