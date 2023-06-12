@@ -15,15 +15,15 @@
 Уравнение на потоки \ref{eq:zero-general} и формулы для каждого потока выглядят следующим образом \ref{eq:zero-melt} - \ref{eq:lambda}:
 \begin{equation}
     \label{eq:zero-general}
-    \dot{\rho} = j_{melt} - j_{solid} - j_{evap}
+    \dot{m} = j_{melt} - j_{solid} - j_{evap}
 \end{equation}
 \begin{equation}
     \label{eq:zero-melt}
-    j_{melt} = \lambda \rho
+    j_{melt} = \lambda m
 \end{equation}
 \begin{equation}
     \label{eq:zer-sol}
-    j_{solid} = \lambda \rho_0
+    j_{solid} = \lambda m_0
 \end{equation}
 \begin{equation}
     \label{eq:lambda}
@@ -31,21 +31,57 @@
 \end{equation}
 
 \noindent
-здесь $v_{beam}$ -- скорость сканирования, а $\rho$ и $\rho_0$ -- текущая и начальная погонные плотности содержимого бассейна.
+здесь $v_{beam}$ -- скорость сканирования, а $m$ и $m_0$ -- текущая и начальная масса содержимого бассейна.
 
 Таким образом уравнения \ref{eq:zero-general} - \ref{eq:lambda} в связке с уравнениями для рассчёта испарения \ref{eq:evap} - \ref{eq:cc} формируют систему, описывающую данную нульмерную модель.
 
 Стоит отметить, что данная модель не учитвает многокомпонентности, а уравнение \ref{eq:zero-general} может быть решено аналитически:
 
 \begin{equation}
-    \rho = -\frac{j^{evap}}{\lambda} (1 - e^{-\lambda t}) + \rho_0
+    m = m_0 -\frac{j^{evap}}{\lambda} (1 - e^{-\lambda t})
 \end{equation}
 \begin{equation}
-    \lim_{t\rightarrow \infty } \rho = \rho_0 - \frac{j^{evap}}{\lambda}
+    \lim_{t\rightarrow \infty } m = m_0 - \frac{j^{evap}}{\lambda}
 \end{equation}
 
-
 \addimg{zero-model-view.pdf}{0.8}{Нульмерная модель бассейна расплава. Здесь $j_{evap}$ -- поток испарения, $j_{melt}, j_{solid}$ -- потоки приходящего (плавящегося) и уходящего (застывающего) вещества соотвественно, определяемые скоростью движения источника.}{fig:zero-model}
+
+На рис. \ref{fig:anal-solution} изображено решение для бассейна расплавленного алюминия температурой 3000К, диаметром источника 0.1 мм, размеры бассейна раплава -- 1000\times300\times100 мкм -- длина, ширина и глубина соответственно. Параметры матриала, необходимые для рассчёта испарения были взяты из работы \cite{klassen2018simulation}.
+
+\addimg{anal_solution.pdf}{1.0}{Аналитическое решение уравнения \ref{eq:zero-general}}{fig:anal-solution}
+
+Уравнение для 2 компонент:
+
+\begin{equation}
+    \label{eq:zero-double-comp}
+    \dot{m_{\alpha}} = -j_{\alpha} \gamma^{\text{акт}}_{\alpha} \frac{\mu_{\alpha}}{m_{\alpha}}\frac{1}{\sum\limits_{\alpha} \frac{\mu_{\alpha}}{m_{\alpha}}} + \lambda (m_{\alpha}^0 - m_{\alpha})
+\end{equation}
+
+\addimg{thesis-w-3000.pdf}{1.0}{Численное решение уравнения \ref{eq:zero-general}}{fig:test}
+
+\begin{figure}
+    \includegraphics[width=.5\textwidth]{thesis-w-3000.pdf}\hfill
+    \includegraphics[width=.5\textwidth]{thesis-w-3500.pdf}\hfill
+    \\[\smallskipamount]
+    \includegraphics[width=.5\textwidth]{thesis-w-4000.pdf}\hfill
+    \includegraphics[width=.5\textwidth]{thesis-w-4500.pdf}\hfill
+\end{figure}
+
+
+\begin{figure}
+    \includegraphics[width=.5\textwidth]{thesis-cwwo-3000.pdf}\hfill
+    \includegraphics[width=.5\textwidth]{thesis-cwwo-3500.pdf}\hfill
+    \\[\smallskipamount]
+    \includegraphics[width=.5\textwidth]{thesis-cwwo-4000.pdf}\hfill
+    \includegraphics[width=.5\textwidth]{thesis-cwwo-4500.pdf}\hfill
+\end{figure}
+\begin{figure}
+    \includegraphics[width=.5\textwidth]{thesis-cwwo6-3000.pdf}\hfill
+    \includegraphics[width=.5\textwidth]{thesis-cwwo6-3500.pdf}\hfill
+    \\[\smallskipamount]
+    \includegraphics[width=.5\textwidth]{thesis-cwwo6-4000.pdf}\hfill
+    \includegraphics[width=.5\textwidth]{thesis-cwwo6-4500.pdf}\hfill
+\end{figure}
 
 
 
