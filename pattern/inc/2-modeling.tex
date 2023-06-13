@@ -83,6 +83,15 @@
     \includegraphics[width=.5\textwidth]{thesis-cwwo6-4500.pdf}\hfill
 \end{figure}
 
+\subsection{Модель конвекции}
 
+\begin{equation}
+    \label{eq:sec-upwind}
+    \frac{c^{n+1}_{i} - c^{n}_{i}}{\Delta t} =
+    \begin{cases}
+         -\frac{v_i}{2\Delta x_i}(3u_i-4u_{i-1}+u_{i-2}), &v_i > 0 \\
+         \frac{v_i}{2\Delta x_i}(3u_i-4u_{i+1}+u_{i+2}), &v_i < 0 
+    \end{cases}
+\end{equation}
 
 \clearpage
